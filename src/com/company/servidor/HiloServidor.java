@@ -43,7 +43,7 @@ public class HiloServidor implements Runnable{
 
 
             //Ciclo infinito que estara escuchando por los movimientos de cada jugador
-            //Cada que un jugador pone una X o O viene aca y le dice al otro jugador que es su turno
+            //Cada vez que un jugador pone una X o O viene aca y le dice al otro jugador que es su turno
             while(true){
                 //Leer los datos que se mandan cuando se selecciona un boton
                 String recibidos = in.readUTF();

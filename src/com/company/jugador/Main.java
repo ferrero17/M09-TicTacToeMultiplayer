@@ -4,9 +4,9 @@ import javax.swing.JButton;
 
 public class Main extends javax.swing.JFrame {
 
-
-
+    //Instanciamos un Cliente
     private Cliente cliente;
+    //Declaramos el array de botones
     private JButton[][] botones = new JButton[3][3];
     /*
     Constructor donde generamos una matriz de botones, que represneta el tablero del juego
@@ -291,7 +291,7 @@ public class Main extends javax.swing.JFrame {
         return botones;
     }
 
-    //Cuando se preciona un boton enviamos los datos de la jugada al servidor (fila y columna del boton precionado)
+    //Cuando se presiona un boton enviamos los datos de la jugada al servidor (fila y columna del boton presionado)
     public void enviarTurno(int f,int c){
         cliente.enviarTurno(f, c);
     }
